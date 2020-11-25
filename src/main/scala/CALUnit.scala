@@ -9,3 +9,6 @@ class CAL(inputWidth:Int, weightWidth:Int, outputWidth:Int) extends Module {
   io.output := io.input * io.weight
 }
 
+/*This is the  multiplier we implement*/
+
+

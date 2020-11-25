@@ -14,19 +14,17 @@ class PE extends Module{
     val psum_in   = Input(UInt(outputWidth.W))
     val select    = Input(Bool())
   })
-  /*
-  io signals interface define
-  */
+  //io signals interface define
 
   val wc1 = RegNext(io.weight_in(0),VecInit(0.U(inputWidth.W),0.U(inputWidth.W),0.U(inputWidth.W)))
   val wc2 = RegNext(io.weight_in(1),VecInit(0.U(inputWidth.W),0.U(inputWidth.W),0.U(inputWidth.W)))
   val wc3 = RegNext(io.weight_in(2),VecInit(0.U(inputWidth.W),0.U(inputWidth.W),0.U(inputWidth.W)))
-  val tc1 = RegNext(io.ifmaps_in,VecInit(0.U(inputWidth.W),0.U(inputWidth.W),0.U(inputWidth.W)))
-  val tc2 = RegNext(tc1,VecInit(0.U(inputWidth.W),0.U(inputWidth.W),0.U(inputWidth.W)))
-  val tc3 = RegNext(tc2,VecInit(0.U(inputWidth.W),0.U(inputWidth.W),0.U(inputWidth.W)))
   val temp1= VecInit(0.U(outputWidth.W),0.U(outputWidth.W),0.U(outputWidth.W))
   val temp2= VecInit(0.U(outputWidth.W),0.U(outputWidth.W),0.U(outputWidth.W))
   val temp3= VecInit(0.U(outputWidth.W),0.U(outputWidth.W),0.U(outputWidth.W))
+  val tc1 = RegNext(io.ifmaps_in,VecInit(0.U(inputWidth.W),0.U(inputWidth.W),0.U(inputWidth.W)))
+  val tc2 = RegNext(tc1,VecInit(0.U(inputWidth.W),0.U(inputWidth.W),0.U(inputWidth.W)))
+  val tc3 = RegNext(tc2,VecInit(0.U(inputWidth.W),0.U(inputWidth.W),0.U(inputWidth.W)))
   for (a <- 0 until arrayLength){
     val CAL1 = Module(new CAL(inputWidth,inputWidth,outputWidth)) // call the multiplier
     CAL1.io.input := tc1(a)
