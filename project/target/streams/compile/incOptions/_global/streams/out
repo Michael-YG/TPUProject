@@ -1,2 +1,2 @@
-[debug] Created transactional ClassFileManager with tempDir = C:\Users\YG\iCloudDrive\Desktop\junior_year\微处理器设计\proj\myProject\TPUProject\project\target\scala-2.12\sbt-1.0\classes.bak
-[debug] Removing the temporary directory used for backing up class files: C:\Users\YG\iCloudDrive\Desktop\junior_year\微处理器设计\proj\myProject\TPUProject\project\target\scala-2.12\sbt-1.0\classes.bak
+[debug] Created transactional ClassFileManager with tempDir = /Users/yg/Desktop/junior_year/微处理器设计/proj/myProject/TPUProject/project/target/scala-2.12/sbt-1.0/classes.bak
+[debug] Removing the temporary directory used for backing up class files: /Users/yg/Desktop/junior_year/微处理器设计/proj/myProject/TPUProject/project/target/scala-2.12/sbt-1.0/classes.bak

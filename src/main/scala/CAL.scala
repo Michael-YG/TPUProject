@@ -10,5 +10,8 @@ class CAL(inputWidth:Int, weightWidth:Int, outputWidth:Int) extends Module {
 }
 
 /*This is the  multiplier we implement*/
-
+//
+//object PE extends App{
+//  chisel3.Driver.execute(args, () => new CAL())
+//}
 
