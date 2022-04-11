@@ -1,0 +1,6 @@
+2022.04.11 14:43:20 INFO  tracing is disabled for protocol LSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/michael/Desktop/codes_local/chisel/TPUProject/.metals/lsp.trace.json or /Users/michael/Library/Caches/org.scalameta.metals/lsp.trace.json
+2022.04.11 14:43:20 INFO  logging to file /Users/michael/Desktop/codes_local/chisel/TPUProject/.metals/metals.log
+2022.04.11 14:43:20 INFO  Started: Metals version 0.11.2 in workspace '/Users/michael/Desktop/codes_local/chisel/TPUProject' for client Visual Studio Code 1.66.0.
+2022.04.11 14:43:20 INFO  Parse release: 17.0.1
+2022.04.11 14:43:21 INFO  time: initialize in 1s
+2022.04.11 14:43:21 WARN  Build server is not auto-connectable.
